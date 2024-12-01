@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <title>to-do list</title>
+</head>
+
+<body>
+
+  <div class="outer">
+    <div class="right">
+      <div class="main">
+        <h1>To-Do List</h1>
+        <ul id="main-task-list"></ul>
+    
+        <p><strong>Pending Tasks: </strong><span id="pending-count"></span></p>
+        <ul id="todo-list"></ul>
+        
+        <h2>Completed Tasks</h2>
+        <p><strong>Completed Tasks: </strong><span id="completed-count"></span></p>
+        <ul id="completed-list"></ul>
+        <button id="retrieve-btn">Retrieve Removed Tasks</button>
+      </div>
+    </div>
+  
+    <div class="left">
+      <div class="todo-container">
+        <h1>Let's do!</h1>
+        <div class="input-container">
+          <input type="text" id="write" placeholder="Enter a task...">
+          <button id="add-btn">Add Task</button>
+        </div>
+        <p><strong></strong></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
